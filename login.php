@@ -6,7 +6,6 @@ if ($_SESSION['sessaoIdDoador']) {
 }
 else{
 require("config/conexao.php");
-print_r($_SESSION);
 $con_geral = new conexao;
 
 ?>

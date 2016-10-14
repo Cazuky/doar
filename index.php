@@ -82,8 +82,6 @@ $ExecuteDoar = $geral->banco->Execute($sql);
           require_once("views/doarinit.php");
         }
         ?>
-
-
     </div>
     <!-- PORTIFOLIO -->
     <div class="w3-row w3-white " >
