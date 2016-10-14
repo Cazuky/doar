@@ -43,7 +43,7 @@ $ExecuteDoar = $geral->banco->Execute($sql);
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-right w3-display-topright" style="padding:6px 24px">
       <i class="fa fa-remove"></i>
     </a>
-    <a href="javascript:void(0)" class="w3-padding w3-margin w3-btn w3-yellow w3-hover-yellow w3-border w3-border-pale-blue w3-round-large w3-text-blue">Doar agora</a>
+    <a href="login.php" class="w3-padding w3-margin w3-btn w3-yellow w3-hover-yellow w3-border w3-border-pale-blue w3-round-large w3-text-blue">Doar agora</a>
     <a href="javascript:void(0)" class="w3-text-grey w3-hover-blue">sobre nós</a>
     <a href="javascript:void(0)" class="w3-text-grey w3-hover-blue">como funciona </a>
     <a href="javascript:void(0)" class="w3-text-grey w3-hover-blue">Políticas e termos</a>
