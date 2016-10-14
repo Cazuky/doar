@@ -1,0 +1,6 @@
+.w3-display-middlemiddle{position:absolute;left:0;bottom:50%; top: 10%; width:100%;text-align:center}
+.w3-float-none {float: none !important}
+.w3-align-center {margin: 0 auto;}
+.w3-outline {outline: none!important}
+
+.input-search {background: url('../img/searchicon.png'); background-position: 10px 12px;
