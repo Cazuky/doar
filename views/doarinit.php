@@ -1,6 +1,6 @@
 <div class="w3-twothird w3-padding-32">
 <?php while($RegisterDoar = $ExecuteDoar->FetchNextObject()):?>
-<div class="w3-card-4 w3-margin w3-white" style="height:auto">
+<div class="w3-card-4 w3-margin w3-white" style="height:15em">
   <img src="images/doacao/<?= $RegisterDoar->IMAGEM?>" alt="" class="w3-col l3 m3 s6"  width="140px"height="100%" />
   <div class="w3-container">
     <h3 class=""><?= $RegisterDoar->TITULO?></h3>
