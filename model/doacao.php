@@ -25,8 +25,28 @@ class  doacaoModel {
         }
       }
     }
-
-
+  }
+  function ListDetails($id){
+    $sql ="SELECT doacao.*, doador.*, categoria.*, doacao.ID as doaid FROM doacao
+    JOIN categoria ON categoria.id = doacao.categoria_id
+    JOIN doador ON doador.id = doacao.doador_id
+    WHERE doacao.id=".$id;
+    $this->execute = $this->con->banco->Execute($sql);
+    $this->register = $this->execute->FetchNextObject();
+  }
+  function ListCategory($id){
+    $sql ="SELECT doacao.*, doador.*, categoria.*, doacao.ID as doaid FROM doacao
+    JOIN categoria ON categoria.id = doacao.categoria_id
+    JOIN doador ON doador.id = doacao.doador_id
+    WHERE doacao.categoria_id=".$id;
+    $this->execute = $this->con->banco->Execute($sql);
+  }
+  function ListSearch($searchfor){
+    $sql ="SELECT doacao.*, doador.*, categoria.*, doacao.ID as doaid FROM doacao
+    JOIN categoria ON categoria.id = doacao.categoria_id
+    JOIN doador ON doador.id = doacao.doador_id
+    WHERE (doacao.titulo LIKE '%$searchfor%' OR (doacao.descricao LIKE '%$searchfor%' OR (categoria.categoria LIKE '%$searchfor%')))";
+    $this->execute = $this->con->banco->Execute($sql);
   }
 
 }

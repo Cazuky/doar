@@ -39,7 +39,7 @@ $('.SlideSlick').slick({autoplay: true, dots: true, infinite: true, arrows: true
     loginForm.submit(function(){
       dados = $(this).serialize();
       $.ajax({
-        url: 'controller/auth.php',
+        url: '../controller/auth.php',
         type: 'POST',
         data: dados+'&action=login',
         beforeSend:'',

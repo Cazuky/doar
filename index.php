@@ -34,13 +34,14 @@ $ExecuteDoar = $geral->banco->Execute($sql);
   .filter {width: 100%; height: 100%; position: fixed; background: rgba(0, 0, 0, 0.47)}
   a{text-decoration: none}
   .cursor-pointer {cursor: pointer}
+  .height{min-height: 15em; height: auto}
 
   </style>
 </head>
 <body>
   <!-- Sidenav -->
   <nav class="w3-sidenav w3-white w3-card-2 w3-animate-top w3-center" style="display:none;padding-top:150px" id="mySidenav">
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-right w3-display-topright" style="padding:6px 24px">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-right w3-display-topright">
       <i class="fa fa-remove"></i>
     </a>
     <a href="login.php" class="w3-padding w3-margin w3-btn w3-yellow w3-hover-yellow w3-border w3-border-pale-blue w3-round-large w3-text-blue">Doar agora</a>
@@ -61,11 +62,11 @@ $ExecuteDoar = $geral->banco->Execute($sql);
   </div>
 
   <div class="w3-main w3-padding-0" style=" margin-top:5em">
-    <div class=" w3-display-container " style="width: 100%">
+    <div class=" w3-display-container " style="width: 100%; height:auto">
       <div class="SlideSlick">
-        <div><img class="" src="images/banner1.jpg" style="width:100%"></div>
-        <div><img class="" src="images/banner2.jpg" style="width:100%"></div>
-        <div><img class="" src="images/banner4.jpg" style="width:100%"></div>
+        <div><img class="" src="images/banner1.jpg" style="width:100%; height: 30em"></div>
+        <div><img class="" src="images/banner2.jpg" style="width:100%; height: 30em"></div>
+        <div><img class="" src="images/banner4.jpg" style="width:100%; height: 30em"></div>
       </div>
     </div>
     <div class="w3-container w3-center w3-margin" style="">
@@ -74,7 +75,7 @@ $ExecuteDoar = $geral->banco->Execute($sql);
     <div class="w3-container w3-light-grey">
       <?php
         $page = $_REQUEST['page'];
-        $paginas = array ("minhasdoacoes", "perfil","doacao");
+        $paginas = array ("minhasdoacoes", "perfil","desapego");
         if (in_array($page, $paginas)) {
           require_once("../controller/".$page.".php");
         }
@@ -88,7 +89,7 @@ $ExecuteDoar = $geral->banco->Execute($sql);
       <div class=" w3-container " style="width:80%; margin:0 auto; height:100%; position:relative;">
 
         <div class="w3-content w3-padding-hor-64" style="">
-          <h3 class="vn-title w3-padding-32 w3-center " id="portifolio" style="width:100%">
+          <h3 class="vn-title w3-padding-32 w3-center w3-bottombar w3-border-pale-blue w3-text-blue " id="portifolio" style="width:100%">
             NOSSOS PARCEIROS
           </h3>
           <div class="w3-row">

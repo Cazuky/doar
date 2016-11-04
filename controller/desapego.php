@@ -33,5 +33,19 @@ if ($action=="search") {
 	$fazer->search($searchfor);
 	require_once("views/search.php");
 }
-
+if ($action=="details") {
+  $id= mysql_real_escape_string($_GET['id']);
+  $fazer->ListDetails($id);
+  require_once("../views/m.details.php");
+}
+if ($action=="category") {
+  $id= mysql_real_escape_string($_GET['id']);
+  $fazer->ListCategory($id);
+  require_once("../views/m.category.php");
+}
+if ($action=="searchmobile") {
+  $searchfor= mysql_real_escape_string($_POST['search']);
+  $fazer->ListSearch($searchfor);
+  require_once("../views/m.search.php");
+}
  ?>

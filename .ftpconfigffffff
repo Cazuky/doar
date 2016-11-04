@@ -1,0 +1,16 @@
+{
+    "protocol": "ftp",
+    "host": "ftp.cegdoar.esy.es",
+    "port": 21,
+    "user": "u162066525",
+    "pass": "1q2w3e4r5t6y",
+    "promptForPass": false,
+    "remote": "/public_html/",
+    "secure": false,
+    "secureOptions": null,
+    "connTimeout": 10000,
+    "pasvTimeout": 10000,
+    "keepalive": 10000,
+    "watch": [],
+    "watchTimeout": 500
+}
